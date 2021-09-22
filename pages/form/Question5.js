@@ -3,7 +3,6 @@ import { Heading, Text, Select, Grid } from "@chakra-ui/react";
 import Layout from "../../components/Layout/Layout";
 import useForm from "../../components/FormProvider";
 import { departments } from "../../utils/constants";
-import LinkButton from "../../components/LinkButton/LinkButton";
 import {
   BackButton,
   SubmitButton,
@@ -34,7 +33,11 @@ export default function Question5() {
         onChange={(e) => setDepartment(e.target.value)}
       >
         {departments.map((department) => (
-          <option key={department} value={department}>
+          <option
+            key={department}
+            value={department}
+            selected={department === answers.department}
+          >
             {capitalize(department)}
           </option>
         ))}
