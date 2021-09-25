@@ -40,6 +40,7 @@ export function ContinueButton(props) {
       <Text>Continue</Text>
     </LinkButton>
   );
+<<<<<<< HEAD
 }
 
 export function SubmitButton(props) {
@@ -49,3 +50,16 @@ export function SubmitButton(props) {
     </LinkButton>
   );
 }
+||||||| c25ef86
+}
+=======
+}
+
+export function SubmitButton(props) {
+  return (
+    <LinkButton {...props}>
+      <Text>Submit</Text>
+    </LinkButton>
+  );
+}
+>>>>>>> upstream/main
